@@ -14,7 +14,7 @@ import Layout from "../../components/layout";
 import RenderComponents from "../../components/render-components";
 import ArchiveRelative from "../../components/archive-relative";
 
-export default function Blog(props) {
+export default function Knowledgebase(props) {
   const {
     archived, blog, blogList, header, footer,
   } = props;
