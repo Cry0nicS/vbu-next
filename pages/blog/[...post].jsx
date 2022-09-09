@@ -47,11 +47,11 @@ export async function getServerSideProps({ params }) {
   try {
     const banner = await Stack.getEntryByUrl({
       contentTypeUid: "page",
-      entryUrl: "/blog",
+      entryUrl: "/knowledgebase",
     });
     const blog = await Stack.getEntryByUrl({
       contentTypeUid: "blog_post",
-      entryUrl: `/blog/${params.post}`,
+      entryUrl: `/knowledgebase/${params.post}`,
       referenceFieldPath: ["author", "related_post"],
       jsonRtePath: ["body", "related_post.body"],
     });
